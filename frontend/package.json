@@ -1,0 +1,30 @@
+{
+  "name": "soda-frontend",
+  "version": "1.0.0",
+  "main": "dist/electron/main.js",
+  "type": "module",
+  "scripts": {
+    "dev:vite": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.4.0",
+    "react-select": "^5.10.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.12",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "electron": "^35.2.0",
+    "ts-node": "^10.9.2",
+    "vite": "^6.2.2",
+    "vite-plugin-electron": "^0.29.0",
+    "wait-on": "^8.0.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

@@ -1,0 +1,45 @@
+supabase_config.json
+
+__pycache__/
+*.exe
+*.app
+*.asar
+
+.idea/
+
+.DS_Store
+Thumbs.db
+
+# 依赖文件
+node_modules/
+
+# 构建文件
+dist/
+dist-electron/
+
+# 配置文件
+.env
+.env.local
+.env.development
+.env.production
+
+# Vite 和 TypeScript 缓存
+.vite/
+.cache/
+out/
+build/
+tsconfig.tsbuildinfo
+
+# MacOS & Windows 临时文件
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# VSCode
+.vscode/
+
+# Flask-Migrate
+migrations/

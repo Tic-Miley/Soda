@@ -1,0 +1,56 @@
+/* 匹配卡片样式 */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-left: 4%;
+    padding-right: 4%;
+    background: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    gap: 2px;
+    display: flex;
+    flex-direction: column;
+  }
+  .card:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+  }
+
+  /* 卡片头部样式 */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-tag {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  background-color: #9bccfd ;
+  color: white ;
+  font-weight: bold;
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 4px 10px;
+  margin: 1.5px;
+} 
+
+/* 底部样式 - 联系TA按钮对齐右下角 */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.card-creator {
+  font-size: 18px;
+  color: #777;
+}

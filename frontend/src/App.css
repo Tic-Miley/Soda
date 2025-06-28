@@ -1,0 +1,21 @@
+@import './styles/Home.css';
+@import './styles/MatchCard.css';
+@import './styles/NavBar.css';
+@import './styles/PageTitle.css';
+@import './styles/Form.css';
+@import './styles/TopBar.css';
+@import './styles/List.css';
+@import './styles/Functions.css';
+/* 定义总体页面风格 */
+body, input, textarea, select, button{
+  margin: 0;
+  font-family: 'PingFang SC', 'Segoe UI', sans-serif;
+  background-color: #F9F9F9;
+  color: #2E3025;
+}
+
+.main{
+  margin-top: 140px;
+  margin-left: 16%;
+  margin-right: 16%;
+}

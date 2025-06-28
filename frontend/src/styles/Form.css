@@ -1,0 +1,297 @@
+/* 提交表单布局 */
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    gap: 25px;
+    background: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 4%;
+    padding-right: 4%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+
+  /* 标签样式 */
+  .label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2E3025;
+  }
+  
+  /* 输入框通用样式 */
+  .input, .textarea,.time-select {
+    margin: 3px 0;
+    padding: 10px;
+    border: none;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+    background-color: #F9F9F9;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 98%;
+
+  }
+
+
+  .input:focus, .textarea:focus, .time-select:focus {
+    border: 1px solid #F9D9DC;
+    box-shadow: 0 0 6px #F9D9DC;
+    outline: none;
+  }
+
+  .time-select{
+    cursor: pointer;
+  }
+  /* 文本域自适应高度 */
+  .textarea {
+    min-height: 60px;
+    resize: vertical;
+  }
+  
+  /* 错误提示 */
+  .error {
+    color: #e74c3c;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* react-select 选择样式覆盖 */
+  .react-select__control {
+    margin: 3px 0 !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1)!important;
+    background-color: #F9F9F9!important;
+    border-radius: 8px !important;
+    font-size: 16px !important;
+    width: 100% !important;
+    border: none !important;
+    cursor: pointer !important;
+  }
+  
+  .react-select__control--is-focused {
+    border: 1px solid #F9D9DC !important;
+    box-shadow: 0 0 6px #F9D9DC !important;
+    outline: none !important;
+  }
+  
+  .react-select__multi-value {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1)!important;
+    background-color: #F9D9DC !important;
+    color: #D75670 !important;
+    border-radius: 6px !important;
+  }
+  
+  .react-select__multi-value__label {
+    color: #2E3025 !important;
+    font-weight: 550;
+  }
+  
+  .react-select__menu {
+    border-radius: 8px !important;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  .react-select__control--menu-is-open {
+    border-color: #F9D9DC !important;
+    box-shadow: 0 0 6px #F9D9DC !important;
+  }
+
+  /* 提交按钮样式 */
+  .submit-button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #A0C4FF;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .submit-button:hover {
+    background-color: #88adf8;
+  }
+  
+  /* 标题和描述的输入框样式 */
+  .title-input {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  /* 描述输入框样式 */
+  .textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  /* 表单性按钮样式 */
+.button {
+  padding: 10px 16px;
+  background-color: #A0C4FF;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  background-color: #88adf8;
+}
+
+.button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* 申请卡片样式 */
+.application-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.application-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.application-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.application-details {
+  margin-bottom: 15px;
+}
+
+.application-details p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.application-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.application-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* 申请状态样式 */
+.application-status {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.status-pending {
+  background-color: #ffd166;
+  color: #806000;
+}
+
+.status-accepted {
+  background-color: #06d6a0;
+  color: #003d2e;
+}
+
+.status-rejected {
+  background-color: #ef476f;
+  color: #5c0a20;
+}
+
+/* 接受/拒绝按钮样式 */
+.accept-button {
+  background-color: #06d6a0;
+}
+
+.accept-button:hover {
+  background-color: #05b989;
+}
+
+.reject-button {
+  background-color: #ef476f;
+}
+
+.reject-button:hover {
+  background-color: #d13860;
+}
+
+/* 申请反馈消息样式 */
+.apply-success, .action-message {
+  background-color: #06d6a0;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.apply-error {
+  background-color: #ef476f;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.success-message {
+  background-color: #06d6a0;
+}
+
+/* Profile avatar styles */
+.profile-avatar-container {
+  position: relative;
+  cursor: pointer;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.profile-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  border-radius: 50%;
+}
+
+.profile-avatar-container:hover .avatar-overlay {
+  opacity: 1;
+}

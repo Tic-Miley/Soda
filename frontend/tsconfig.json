@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "target": "ESNext",
+    "outDir": "dist",
+    "rootDir": ".",
+    "resolveJsonModule": true
+  },
+  "resolveJsonModule": true,
+  "allowJs": true,
+  "include": ["electron/**/*", "src/**/*"],
+  "ts-node": {
+    "transpileOnly": true,
+    "esm": true
+  }
+}

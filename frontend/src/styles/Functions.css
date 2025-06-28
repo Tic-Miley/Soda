@@ -1,0 +1,219 @@
+/* 提交按钮 */
+  .refresh-button {
+    background-color: white;
+    border: none;
+    height: 23px;
+    width: 23px;
+    position: absolute;
+    top: 2%;
+    right: 1%;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.refresh-button:hover {
+  transform: scale(1.1);
+}
+
+  .button {
+    padding: 12px 20px;  
+    background-color: #F9D9DC;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .button:hover {
+    background-color: #D75670;
+    transform: scale(1.015);
+  }
+
+  /* Webkit（Chrome, Edge, Safari） */
+.match-list::-webkit-scrollbar {
+    width: 6px; /* 细一点 */
+}
+
+.match-list::-webkit-scrollbar-thumb {
+    background: #f1f1f1; /* 滑块颜色 */
+    border-radius: 10px; /* 让滚动条更圆滑 */
+    transition: background-color 0.3s
+}
+
+.match-list::-webkit-scrollbar-thumb:hover {
+    background: #999; /* 鼠标悬停时稍微变暗 */
+}
+
+/* Tabs navigation for MyActivities */
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3%;
+  margin: 20px 0 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 80px;
+  z-index: 1001;
+  max-width: 94%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tab {
+  padding: 12px 10px;
+  border: none;
+  background: transparent;
+  color: #2E3025;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  flex: 1;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.tab:hover {
+  background: #F9F9F9;
+  color: #F9D9DC;
+}
+
+.tab.active {
+  color: #F9D9DC;
+  border-bottom: 2px solid #F9D9DC;
+  font-weight: bold;
+}
+
+/* Loading styles */
+.loading{
+  color: #2E3025;
+}
+
+/* 申请卡片样式 */
+.application-card {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.application-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.application-header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.application-status {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status-pending {
+  background-color: #FFE082;
+  color: #b7974c;
+}
+
+.status-accepted {
+  background-color: #C8E6C9;
+  color: #4CAF50;
+}
+
+.status-rejected {
+  background-color: #FFCDD2;
+  color: #F44336;
+}
+
+.application-details {
+  margin: 15px 0;
+}
+
+.application-details p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.application-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.application-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.accept-button {
+  background-color: #C8E6C9;
+  color: #4CAF50;
+}
+
+.accept-button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.reject-button {
+  background-color: #FFCDD2;
+  color: #F44336;
+}
+
+.reject-button:hover {
+  background-color: #F44336;
+  color: white;
+}
+
+.action-message {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.success-message {
+  background-color: #C8E6C9;
+  color: #4CAF50;
+}
+
+.application-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.application-user p {
+  margin: 0;
+}
+
+.applicant-username {
+  font-size: 15px;
+  color: #3498db;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.applicant-username:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}

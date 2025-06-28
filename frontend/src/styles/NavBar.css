@@ -1,0 +1,33 @@
+.navbar {
+    position: fixed;
+    bottom: 0px;
+    left: 15%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+/* 导航栏链接样式 */
+.nav-links, .my-act-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .nav-link, .my-act-link {
+    border: none;
+    background-color: white;
+    font-size: 15px;
+    color: #2E3025;
+    text-decoration: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 20px;
+    transition: background 0.3s, transform 0.2s;
+  }
+  .nav-link:hover, .my-act-link:hover {
+    background: #F9D9DC;
+    transform: scale(1.05);
+  }
+  

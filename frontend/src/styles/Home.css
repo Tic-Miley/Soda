@@ -1,0 +1,45 @@
+/* 待机页面 */
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #F9D9DC 100%);
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  /* 标志动画 */
+  .home-logo {
+    width: 20%;
+    height: auto;
+    animation: bounceIn 1.5s ease-in-out, ease-out 0.5s forwards;
+  }
+  
+  /* 标题动画 */
+  .home-title {
+    font-size: 2rem;
+    color: #333;
+    margin-top: 20px;
+    animation: bounceIn 1.5s ease-out 0.5s both;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* 动画定义 */
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  
