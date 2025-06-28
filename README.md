@@ -1,5 +1,19 @@
 # Soda-速搭
 
+## 软件展示
+
+<div align="center">
+  <img src="https://github.com/Tic-Miley/Soda/blob/main/images/show_image_activitylist.png" width="500" alt="活动列表">
+</div>
+
+<div align="center">
+  <img src="https://github.com/Tic-Miley/Soda/blob/main/images/show_image_activityview.png" width="500" alt="活动细节">
+</div>
+
+<div align="center">
+  <img src="https://github.com/Tic-Miley/Soda/blob/main/images/show_image_acceptapplication.png" width="500" alt="接收申请">
+</div>
+
 ## 项目简介
 Soda-速搭是一个跨平台的搭子匹配应用，支持 **Windows / macOS / Linux**，结合 **Electron + React + Supabase** 实现 **创建、申请、参加活动** 等功能。
 
